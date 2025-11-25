@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+
+
 const CountrySchema = new Schema({
     name: { type: String, 
         required: true},
@@ -9,8 +11,7 @@ const CountrySchema = new Schema({
       lng: { type: Number },
     },
     image: { type: String }, 
-    {
-    timestamps: true,
+    
     collation: { locale: "en", strength: 2 }, 
-  }
+  
 });

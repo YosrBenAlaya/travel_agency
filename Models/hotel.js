@@ -40,11 +40,7 @@ const hotelSchema = new Schema({
       checkOut: { type: Date, required: true }
     }
   ]
-
 }
 );
-
-
-
 const Hotel = mongoose.model("Hotel", hotelSchema);
 module.exports = Hotel;

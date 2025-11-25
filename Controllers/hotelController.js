@@ -124,7 +124,6 @@ const createHotel = async (req, res) => {
   }
 };
 
-
 const reserveHotel = async (req, res) => {
   try {
     const hotelId = req.params.id;
